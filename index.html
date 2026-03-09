@@ -165,7 +165,7 @@
 
         @font-face {
             font-family: 'cinecaption226';
-            src: url('fonts/cinecaption226_subset.ttf') format('truetype');
+            src: url('fonts/cinecaption226.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -221,6 +221,8 @@
             cursor: pointer;
             width: 90px;
             text-align: center;
+            font-family: 'Afacad Flux';
+            font-size: 12px;
         }
 
         .left {
@@ -296,7 +298,7 @@
 
         .cinecaption {
             font-family: 'cinecaption226';
-            font-size: 10px;
+            font-size: 14px;
         }
 
         .game-section {
@@ -460,6 +462,9 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="loading"></div>
@@ -469,42 +474,64 @@
                 <img src="icon.jpg" alt="プロフィール画像">
             </div>
             <p class="bio"></p>
-            <button id="lang-toggle">English</button>
+            <button id="lang-toggle">Language</button>
         </div>
         
         <div class="profile-section" data-lang="ja">
-            <div class="game-title">MY PROFILE</div>
+            <div class="game-title">My Profile</div>
             <p class="profile-text">
-                NAME - musuke<br>
-                AGE - Secret<br>
-                GENDER - ♂ <br>
+                Name - musuke<br>
+                Age - Secret<br>
+                Gender - ♂ <br>
                 MBTI - INFP-T(仲介者)<br>
-                BIRTHDAY - 7/7
+                Birthday - 7/7
             </p>
         </div>
         <div class="profile-section" data-lang="en" style="display:none;">
-            <div class="game-title">MY PROFILE</div>
+            <div class="game-title">My Profile</div>
             <p class="profile-text">
-                NAME - musuke<br>
-                AGE - Secret<br>
-                GENDER - Male<br>
+                Name - musuke<br>
+                Age - Secret<br>
+                Gender - Male<br>
                 MBTI - INFP-T (Mediator)<br>
-                BIRTHDAY - 7/7
+                Birthday - 7/7
             </p>
         </div>
         <div class="profile-section" data-lang="ko" style="display:none;">
-            <div class="game-title">MY PROFILE</div>
+            <div class="game-title">My Profile</div>
             <p class="profile-text">
-                NAME - 무스케<br>
-                AGE - Secret<br>
-                GENDER - 남성<br>
+                Name - 무스케<br>
+                Age - Secret<br>
+                Gender - 남성<br>
                 MBTI - INFP-T (중재자)<br>
-                BIRTHDAY - 7/7
+                Birthday - 7/7
+            </p>
+        </div>
+
+        <div class="profile-section" data-lang="ja">
+            <div class="game-title">Preference</div>
+            <p class="profile-text">
+                <span class="cinecaption">優しい人が好き</span><br>
+                <span class="cinecaption">関わって良かったと思える人が好き</span>
+            </p>
+        </div>
+        <div class="profile-section" data-lang="en" style="display:none;">
+            <div class="game-title">Preference</div>
+            <p class="profile-text">
+                <span class="cinecaption">I like kind people</span><br>
+                <span class="cinecaption">I like people who make me feel glad I met them</span>
+            </p>
+        </div>
+        <div class="profile-section" data-lang="ko" style="display:none;">
+            <div class="game-title">Preference</div>
+            <p class="profile-text">
+                <span class="cinecaption">다정한 사람을 좋아해</span><br>
+                <span class="cinecaption">만나서 좋았다고 느끼게 해주는 사람을 좋아해</span>
             </p>
         </div>
 
         <div class="game-section" data-lang="ja">
-            <div class="game-title">PLAY GAME</div>
+            <div class="game-title">Play Game</div>
             <p class="game-text">
                 Minecraft Bedrock ＆ Java<br>
                 Overwatch<br>
@@ -516,7 +543,7 @@
             </p>
         </div>
         <div class="game-section" data-lang="en" style="display:none;">
-            <div class="game-title">PLAY GAME</div>
+            <div class="game-title">Play Game</div>
             <p class="game-text">
                 Minecraft Bedrock & Java<br>
                 Overwatch<br>
@@ -528,7 +555,7 @@
             </p>
         </div>
         <div class="game-section" data-lang="ko" style="display:none;">
-            <div class="game-title">PLAY GAME</div>
+            <div class="game-title">Play Game</div>
             <p class="game-text">
                 Minecraft Bedrock & Java<br>
                 Overwatch<br>
@@ -549,12 +576,25 @@
             </p>
         </div>
 
+        <div class="profile-section" data-lang="ja">
+            <div class="game-title">Question Box</div>
+            <p class="profile-text">
+                <a href="https://marshmallow-qa.com/45gezzyvmcfziw3" class="cinecaption">マシュマロで質問</a>
+            </p>
+        </div>
         <div class="profile-section" data-lang="en" style="display:none;">
             <p class="profile-text">
                 SNS<br><br>
                 X... <a href="https://x.com/7ir86w_">@7ir86w_</a><br>
                 Instagram... <a href="https://instagram.com/m.s.k_vii">@m.s.k_vii</a><br>
                 Discord... darker_days
+            </p>
+        </div>
+
+        <div class="profile-section" data-lang="en" style="display:none;">
+            <div class="game-title">Question Box</div>
+            <p class="profile-text">
+                <a href="https://marshmallow-qa.com/45gezzyvmcfziw3" class="cinecaption">Ask me on Mashmallow</a>
             </p>
         </div>
         <div class="profile-section" data-lang="ko" style="display:none;">
@@ -566,9 +606,16 @@
             </p>
         </div>
 
+        <div class="profile-section" data-lang="ko" style="display:none;">
+            <div class="game-title">Question Box</div>
+            <p class="profile-text">
+                <a href="https://marshmallow-qa.com/45gezzyvmcfziw3" class="cinecaption">마시멜로로 질문하기</a>
+            </p>
+        </div>
+
 
         <div class="profile-section" data-lang="ja">
-            <div class="game-title">FAVORITE MUSIC</div>
+            <div class="game-title">Favorite Music</div>
             <p class="profile-text">
                 <a href="https://www.youtube.com/watch?v=FtutLA63Cp8">Bad Apple!!</a><br>
                 <a href="https://youtu.be/Dp5xM_rM1yU?si=IfpliLc6-aTDoPgT">Por Una Cabeza</a><br>
@@ -577,7 +624,7 @@
             </p>
         </div>
         <div class="profile-section" data-lang="en" style="display:none;">
-            <div class="game-title">FAVORITE MUSIC</div>
+            <div class="game-title">Favorite Music</div>
             <p class="profile-text">
                 <a href="https://www.youtube.com/watch?v=FtutLA63Cp8">Bad Apple!!</a><br>
                 <a href="https://youtu.be/Dp5xM_rM1yU?si=IfpliLc6-aTDoPgT">Por Una Cabeza</a><br>
@@ -586,7 +633,7 @@
             </p>
         </div>
         <div class="profile-section" data-lang="ko" style="display:none;">
-            <div class="game-title">FAVORITE MUSIC</div>
+            <div class="game-title">Favorite Music</div>
             <p class="profile-text">
                 <a href="https://www.youtube.com/watch?v=FtutLA63Cp8">Bad Apple!!</a><br>
                 <a href="https://youtu.be/Dp5xM_rM1yU?si=IfpliLc6-aTDoPgT">Por Una Cabeza</a><br>
@@ -635,7 +682,7 @@
                 document.querySelectorAll('[data-lang]').forEach(el => {
                     el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
                 });
-                const buttonTexts = { ja: 'English', en: '한국어', ko: '日本語' };
+                const buttonTexts = { ja: 'English', en: 'Korean', ko: 'Japanese' };
                 langToggle.textContent = buttonTexts[lang];
             }
         });
