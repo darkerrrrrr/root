@@ -182,8 +182,12 @@
         body {
             font-family: 'AbashiriMincho';
             margin: 0;
-            padding: 20px;
-            background-color: #000000;
+            padding: 0;
+            background-image: url('background/5675756756.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #ffffff;
             display: flex;
             justify-content: center;
@@ -194,9 +198,7 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background: #000000;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
             transform: scale(1.75);
             transform-origin: top center;
             transition: opacity 1s ease-in;
@@ -206,7 +208,7 @@
         .header {
             padding: 30px;
             text-align: center;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #ffffff;
             position: relative;
         }
 
@@ -214,9 +216,9 @@
             position: absolute;
             top: 30px;
             right: 30px;
-            background: #333;
+            background: #000000;
             color: #fff;
-            border: none;
+            border: 1px solid #ffffff;
             padding: 5px 10px;
             cursor: pointer;
             width: 90px;
@@ -393,53 +395,6 @@
 
         .twitter { color: #ffffff; }
         .instagram { color: #E4405F; }
-        .discord { color: #5865F2; }
-
-        .discord-status {
-            display: flex;
-            align-items: center;
-            padding: 15px 30px;
-            border-bottom: 1px solid #333;
-            background: #000000;
-        }
-
-        .discord-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 15px;
-            position: relative;
-        }
-
-        .discord-avatar img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .status-indicator {
-            display: none;
-        }
-
-        .discord-info {
-            flex: 1;
-        }
-
-        .discord-name {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 2px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: #ffffff;
-        }
-
-        .discord-activity {
-            font-size: 14px;
-            color: #999;
-        }
 
         @media (max-width: 480px) {
             body {
@@ -453,10 +408,6 @@
             }
 
             .sns-item {
-                padding: 12px 20px;
-            }
-
-            .discord-status {
                 padding: 12px 20px;
             }
         }
